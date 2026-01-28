@@ -1,0 +1,41 @@
+{
+  "projects": [
+    {
+      "id": "policy-diff",
+      "name": "Policy Diff",
+      "tagline": "AI-powered semantic document comparison for policy documents",
+      "description": "Unlike traditional diff tools, Policy Diff uses LLMs and embeddings to detect semantically significant changes while filtering formatting noise. Built for legal and compliance teams.",
+      "status": "production",
+      "featured": true,
+      "techStack": ["Python", "FastAPI", "Ollama", "spaCy", "Transformers", "Presidio"],
+      "categories": ["AI/ML", "NLP", "Document Processing"],
+      "links": {
+        "github": "https://github.com/yourusername/policy-diff",
+        "live": "https://policydiff.yoursite.com",
+        "demo": "https://policydiff.yoursite.com/demo"
+      },
+      "deployment": {
+        "type": "cloud-run",
+        "subdomain": "policydiff",
+        "cost": "pay-per-use"
+      },
+      "highlights": [
+        "PII detection and tokenization before LLM processing",
+        "Hybrid diff approach: text-based + semantic analysis",
+        "Categorizes changes by significance (CRITICAL/HIGH/MEDIUM/LOW)",
+        "Supports Ollama and external LLM APIs (OpenAI/Anthropic)"
+      ],
+      "thumbnail": "/projects/policy-diff/thumbnail.png",
+      "images": [
+        "/projects/policy-diff/screenshot-1.png",
+        "/projects/policy-diff/screenshot-2.png"
+      ],
+      "caseStudyPath": "/case-studies/policy-diff.mdx"
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2026-01-28",
+    "totalProjects": 1,
+    "inProgress": []
+  }
+}
