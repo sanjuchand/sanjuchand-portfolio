@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const services = [
   {
     title: 'Workflow discovery',
@@ -44,12 +46,17 @@ export default function Home() {
               </p>
               <p className="mt-1 text-sm text-stone-400">by Sanju Chand</p>
             </div>
-            <a
-              href="#contact"
-              className="rounded-full border border-amber-200/30 px-5 py-2 text-sm font-medium text-amber-100 transition hover:border-amber-200 hover:bg-amber-200 hover:text-stone-950"
-            >
-              Book a call
-            </a>
+            <nav className="flex items-center gap-4">
+              <a href="/blog" className="text-sm font-medium text-stone-300 transition hover:text-amber-200">
+                Blog
+              </a>
+              <a
+                href="#contact"
+                className="rounded-full border border-amber-200/30 px-5 py-2 text-sm font-medium text-amber-100 transition hover:border-amber-200 hover:bg-amber-200 hover:text-stone-950"
+              >
+                Book a call
+              </a>
+            </nav>
           </header>
 
           <div className="grid flex-1 items-center gap-16 py-24 lg:grid-cols-[1.08fr_0.92fr]">
@@ -151,7 +158,39 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="mx-auto max-w-4xl px-6 pb-24 sm:px-10 lg:px-12">
+      <section className="border-y border-white/10 bg-white/[0.03]">
+        <div className="mx-auto grid max-w-7xl gap-8 px-6 py-20 sm:px-10 lg:grid-cols-[0.75fr_1.25fr] lg:px-12">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-200/70">Latest thinking</p>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-balance sm:text-5xl">
+              Practical notes on agent-powered work.
+            </h2>
+          </div>
+          <article className="rounded-3xl border border-white/10 bg-stone-950/50 p-7">
+            <div className="mb-6 overflow-hidden rounded-2xl border border-white/10 bg-stone-900">
+              <Image
+                src="/blog/agent-job-design-hero.png"
+                alt="Enterprise workflow diagram showing AI agents assigned to clearly defined roles, permissions, approval gates, handoffs, observability, and human ownership."
+                width={1200}
+                height={675}
+                className="h-auto w-full object-cover"
+              />
+            </div>
+            <p className="text-sm text-stone-400">May 15, 2026 · 5 min read</p>
+            <h3 className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-stone-50">
+              <a href="/blog/ai-agents-need-job-design-more-than-bigger-models">AI agents need job design more than bigger models</a>
+            </h3>
+            <p className="mt-4 max-w-3xl leading-7 text-stone-400">
+              Enterprise AI agents need clear roles, permissions, approvals, handoffs, observability, and ownership before they can responsibly take action in real workflows.
+            </p>
+            <a href="/blog/ai-agents-need-job-design-more-than-bigger-models" className="mt-6 inline-flex text-sm font-semibold text-amber-200 hover:text-amber-100">
+              Read article →
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" className="mx-auto max-w-4xl px-6 py-24 sm:px-10 lg:px-12">
         <div className="rounded-[2rem] border border-amber-200/20 bg-amber-200 p-8 text-stone-950 sm:p-10">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-stone-700">Book a call</p>
           <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-balance sm:text-5xl">
