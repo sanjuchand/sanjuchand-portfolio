@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
@@ -91,15 +92,21 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 {post.title}
               </h1>
               <p className="mt-7 max-w-3xl text-xl leading-8 text-stone-300">{post.description}</p>
+              <div className="mt-10 overflow-hidden rounded-[2rem] border border-white/10 bg-stone-900 shadow-2xl shadow-black/30">
+                <Image
+                  src={post.image}
+                  alt={post.imageAlt}
+                  width={1600}
+                  height={900}
+                  priority
+                  className="h-auto w-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </section>
 
         <section className="mx-auto max-w-3xl px-6 py-16 sm:px-10 lg:px-12">
-          <div className="mb-12 rounded-[2rem] border border-amber-200/20 bg-amber-200/10 p-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-amber-200/70">Article theme</p>
-            <p className="mt-3 text-sm leading-6 text-stone-300">{post.imageAlt}</p>
-          </div>
           <div className="space-y-6 text-lg">{post.body.map(renderBlock)}</div>
 
           <div className="mt-16 rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const services = [
   {
     title: 'Workflow discovery',
@@ -165,6 +167,15 @@ export default function Home() {
             </h2>
           </div>
           <article className="rounded-3xl border border-white/10 bg-stone-950/50 p-7">
+            <div className="mb-6 overflow-hidden rounded-2xl border border-white/10 bg-stone-900">
+              <Image
+                src="/blog/agent-job-design-hero.png"
+                alt="Enterprise workflow diagram showing AI agents assigned to clearly defined roles, permissions, approval gates, handoffs, observability, and human ownership."
+                width={1200}
+                height={675}
+                className="h-auto w-full object-cover"
+              />
+            </div>
             <p className="text-sm text-stone-400">May 15, 2026 · 5 min read</p>
             <h3 className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-stone-50">
               <a href="/blog/ai-agents-need-job-design-more-than-bigger-models">AI agents need job design more than bigger models</a>

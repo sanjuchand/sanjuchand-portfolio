@@ -6,6 +6,7 @@ export interface BlogPost {
   description: string
   date: string
   readingTime: string
+  image: string
   imageAlt: string
   body: string[]
 }
@@ -18,6 +19,7 @@ export const blogPosts: BlogPost[] = [
       'Enterprise AI agents need clear roles, permissions, approvals, handoffs, observability, and ownership before they can responsibly take action in real workflows.',
     date: '2026-05-15',
     readingTime: '5 min read',
+    image: '/blog/agent-job-design-hero.png',
     imageAlt:
       'Enterprise workflow diagram showing AI agents assigned to clearly defined roles, permissions, approval gates, handoffs, observability, and human ownership.',
     body: [

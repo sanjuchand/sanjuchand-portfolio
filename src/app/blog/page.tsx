@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getBlogPosts } from '@/lib/blog'
@@ -35,6 +36,9 @@ export default function BlogPage() {
         <div className="grid gap-5">
           {posts.map((post) => (
             <article key={post.slug} className="rounded-3xl border border-white/10 bg-white/[0.04] p-7 transition hover:border-amber-200/30 hover:bg-white/[0.06]">
+              <div className="mb-6 overflow-hidden rounded-2xl border border-white/10 bg-stone-900">
+                <Image src={post.image} alt={post.imageAlt} width={1200} height={675} className="h-auto w-full object-cover" />
+              </div>
               <p className="text-sm text-stone-400">
                 {new Date(`${post.date}T00:00:00`).toLocaleDateString('en-US', {
                   month: 'long',
