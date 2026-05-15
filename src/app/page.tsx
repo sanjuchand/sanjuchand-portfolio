@@ -160,7 +160,7 @@ export default function Home() {
           <p className="mt-5 max-w-2xl text-lg leading-8 text-stone-800">
             Share the workflow that feels slow, expensive, or hard to keep consistent. We’ll use that as the starting point for a focused implementation conversation.
           </p>
-          <form className="mt-8 grid gap-4" action="mailto:hello@sanjuchand.com" method="post" encType="text/plain">
+          <form className="mt-8 grid gap-4" action="mailto:photoniczia@gmail.com" method="post" encType="text/plain">
             <div className="grid gap-4 sm:grid-cols-2">
               <input className="rounded-2xl border border-stone-950/10 bg-white/80 px-5 py-4 outline-none placeholder:text-stone-500 focus:border-stone-950" name="name" placeholder="Name" />
               <input className="rounded-2xl border border-stone-950/10 bg-white/80 px-5 py-4 outline-none placeholder:text-stone-500 focus:border-stone-950" name="email" type="email" placeholder="Email" />
