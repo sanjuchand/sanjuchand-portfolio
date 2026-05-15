@@ -5,9 +5,16 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Sanju Chand - Full Stack Developer & AI Engineer',
-  description: 'Portfolio showcasing full-stack development, AI/ML projects, and software engineering expertise.',
-  keywords: ['Full Stack Developer', 'AI Engineer', 'Machine Learning', 'Software Engineering'],
+  title: 'AgentForge by Sanju Chand | Managed AI Workflow Implementations',
+  description:
+    'AgentForge builds and operates managed AI workflow implementations for teams that want reliable agent-powered systems, not brittle demos.',
+  keywords: [
+    'Managed AI workflow implementations',
+    'AgentForge',
+    'AI automation',
+    'Agentic workflows',
+    'Sanju Chand',
+  ],
 }
 
 export default function RootLayout({
